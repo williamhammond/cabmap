@@ -1,0 +1,21 @@
+{
+  "name": "cabmap",
+  "version": "1.0.0",
+  "description": "Interactive visualization of taxi traffic it New York City",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/williamhammond/cabmap.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/williamhammond/cabmap/issues"
+  },
+  "homepage": "https://github.com/williamhammond/cabmap#readme"
+}
