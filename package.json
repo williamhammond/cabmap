@@ -1,12 +1,18 @@
 {
   "name": "cabmap",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "Interactive visualization of taxi traffic it New York City",
   "main": "index.js",
-  "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "react-scripts": "^1.0.10"
+  },
+  "dependencies": {
+    "mapbox-gl": "^0.39.1",
+    "react": "^15.5.0",
+    "react-dom": "^15.5.0"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "react-scripts start"
   },
   "repository": {
     "type": "git",
