@@ -9,8 +9,13 @@ Python is currently used just as a way to script downloading all of the cab data
 - `pip install -r requirements.txt`
 - `apt-get install npm`
 
-### JS
+### Frontend
 
-- `npm install mapbox-gl --save`
+[Download](https://www.mapbox.com/help/demos/heatmap/trees.geojson) data file and place in the data directory
+open `public/index.html` in your browser
 
-Then you need to add your configurations to the `dev.env` file. [Here](https://www.mapbox.com/help/how-access-tokens-work/) are instructions on how to get a Mapbox token
+## TODO
+
+- Finish download script 
+- Change map to NYC rather than Pittsburgh
+- Write method to convert tax data to geo-json or have method to convert in on the fly
