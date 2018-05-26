@@ -30,7 +30,7 @@ class Application extends React.Component {
 
     map.addSource('trees', {
         "type": "geojson",
-        "data": "./data/trees.geojson"
+        "data": "../data/trees.geojson"
     });
 
         map.addLayer({
