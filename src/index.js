@@ -25,13 +25,10 @@ class Application extends React.Component {
       zoom
     });
     map.on('load', function() {
-        console.log("test")
-        console.log(this.mapContainer)
-
-    map.addSource('trees', {
-        "type": "geojson",
-        "data": "../data/trees.geojson"
-    });
+        map.addSource('trees', {
+            "type": "geojson",
+            "data": "../data/trees.geojson"
+        });
 
         map.addLayer({
             "id": "trees-heat",
@@ -125,15 +122,6 @@ class Application extends React.Component {
             }
         }, 'waterway-label');
     });
-
-    //click on tree to view dbh in a popup
-    map.on('click', 'trees-point', function (e) {
-    new mapboxgl.Popup()
-        .setLngLat(e.features[0].geometry.coordinates)
-        .setHTML('<b>DBH:</b> '+ e.features[0].properties.dbh)
-        .addTo(map);
-    });
-
   }
 
   render() {
