@@ -17,5 +17,5 @@ open `public/index.html` in your browser
 ## TODO
 
 - Finish download script 
-- Change map to NYC rather than Pittsburgh
-- Write method to convert tax data to geo-json or have method to convert in on the fly
+- Convert shapefile to coordinates
+- Write method to convert tax data to geojson
