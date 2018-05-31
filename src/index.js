@@ -25,10 +25,11 @@ class Application extends React.Component {
       zoom
     });
     map.on('load', function() {
-        map.addSource('zones', {
+        map.addSource('trees', {
             "type": "geojson",
-            "data": "../data/taxi_zones.geojson"
+            "data": "../data/trees.geojson"
         });
+    });
   }
 
   render() {
