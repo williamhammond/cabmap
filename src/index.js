@@ -24,10 +24,23 @@ class Application extends React.Component {
       center: [lng, lat],
       zoom
     });
+
     map.on('load', function() {
-        map.addSource('trees', {
+        map.addSource("zonedata", {
             "type": "geojson",
-            "data": "../data/trees.geojson"
+            "data": "https://github.com/williamhammond/cabmap/blob/master/data/taxi_zones.geojson"
+        });
+        map.addLayer({
+            id: "zones",
+            type: "fill",
+            source: "zonedata",
+            'source-layer': "zonedata",
+                layout: {
+                    visibility: "visible"
+                },
+                paint: {
+                    "fill-color": "rgba(61,153,80,0.55)"
+                }
         });
     });
   }
