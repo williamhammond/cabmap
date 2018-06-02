@@ -26,21 +26,18 @@ class Application extends React.Component {
     });
 
     map.on('load', function() {
-        map.addSource("zonedata", {
-            "type": "geojson",
-            "data": "https://github.com/williamhammond/cabmap/blob/master/data/taxi_zones.geojson"
-        });
         map.addLayer({
             id: "zones",
             type: "fill",
-            source: "zonedata",
-            'source-layer': "zonedata",
-                layout: {
-                    visibility: "visible"
-                },
-                paint: {
-                    "fill-color": "rgba(61,153,80,0.55)"
-                }
+            source: {
+                'type': 'geojson',
+                'data': 'https://raw.githubusercontent.com/williamhammond/cabmap/master/data/taxi_zones.geojson'
+            },
+            layout: {},
+            paint: {
+                "fill-color": "#f08",
+                "fill-opacity": 0.4
+            }
         });
     });
   }
